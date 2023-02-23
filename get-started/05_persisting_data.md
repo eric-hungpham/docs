@@ -99,7 +99,7 @@ name of the volume.
    it to `/etc/todos` in the container, which will capture all files created at the path.
 
     ```console
-    $ docker run -dp 3000:3000 --mount type=volume,src=todo-db,target=/etc/todos getting-started
+    $ docker run -dp 3000:3000 -v todo-db:/etc/todos getting-started
     ```
 
 4. Once the container starts up, open the app and add a few items to your todo list.
